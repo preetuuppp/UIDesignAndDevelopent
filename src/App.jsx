@@ -1,7 +1,6 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import Navbar from "./layout/Navbar";
 import LoginComponent from "./auth0Component/LoginComponent";
-import Footer from "./layout/Footer";
 
 function App() {
   const { isAuthenticated, isLoading } = useAuth0();
@@ -17,7 +16,6 @@ function App() {
       {isAuthenticated ? (
         <>
           <Navbar />
-          <Footer />
         </>
       ) : (
         <LoginComponent />
