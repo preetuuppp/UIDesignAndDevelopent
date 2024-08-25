@@ -7,9 +7,11 @@ import { CiStar } from "react-icons/ci";
 import LogOutComponent from "../auth0Component/LogOutComponent";
 import SliderComponent from "../components/SliderComponent";
 import CardSlider from "../components/CardSlider";
+import { CardSliderData, DealsCard } from "../AllData/Data";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
+
   const handleHamburgerClick = () => {
     setIsActive(!isActive);
   };
@@ -174,8 +176,11 @@ const Navbar = () => {
           </div>
         </div>
         <div>
-          <CardSlider />
+          <CardSlider data={CardSliderData} secondCard={false} />
         </div>
+      </div>
+      <div className="second-card">
+        <CardSlider data={DealsCard} secondCard={true} />
       </div>
     </>
   );

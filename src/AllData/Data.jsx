@@ -101,6 +101,41 @@ export const CardSliderData = [
   },
 ];
 
+export const DealsCard = [
+  {
+    image: "https://www.carlogos.org/tire-logos/ceat-logo.png",
+    name: "CEAT",
+  },
+  {
+    image: "https://www.carlogos.org/tire-logos/jk-logo.png",
+    name: "JK Tyre",
+  },
+  {
+    image: "https://www.carlogos.org/tire-logos/apollo-logo.png",
+    name: "Apollo",
+  },
+  {
+    image: "https://www.carlogos.org/tire-logos/ceat-logo.png",
+    name: "CEAT",
+  },
+  {
+    image: "https://www.carlogos.org/car-logos/ford-logo.png",
+    name: "Ford Figo",
+  },
+  {
+    image: "https://www.carlogos.org/tire-logos/ceat-logo.png",
+    name: "CEAT",
+  },
+  {
+    image: "https://www.carlogos.org/car-logos/ford-logo.png",
+    name: "Ford Figo",
+  },
+  {
+    image: "https://www.carlogos.org/tire-logos/jk-logo.png",
+    name: "JK Tyre",
+  },
+];
+
 export const AllCardData = {
   tyreData: [
     {
