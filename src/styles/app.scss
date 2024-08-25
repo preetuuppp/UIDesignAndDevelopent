@@ -140,7 +140,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .navbar-menu,
     .login-section {
       display: none;
@@ -265,4 +265,39 @@ body {
 }
 .star-icon {
   color: yellow;
+}
+
+@media (max-width: 1024px) {
+  .flex-container {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+
+  .address-section {
+    margin: 50px 100px 30px 100px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+
+  .address-section {
+    width: 100%;
+    margin: 10px 10px 10px 15px;
+  }
+}
+.rating-star {
+  margin-left: 50px;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.verify-text {
+  font-weight: lighter;
+  font-size: 18px;
 }

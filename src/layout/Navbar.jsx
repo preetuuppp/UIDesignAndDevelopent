@@ -139,13 +139,13 @@ const Navbar = () => {
       </nav>
 
       <div className="card-slider">
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-container">
           <div className="address-section w-[500px] address-section">
-            <h2 className="m-4 p-7 text-lg flex justify-between">
+            <h1 className="m-4 p-7 text-lg flex justify-between company-name">
               SHREE HEMKUNT TYRES AND SERVICES
-              <h5 className="text-green-500">verified</h5>
-            </h2>
-            <p className="flex gap-3 m-4">
+              <h5 className="text-green-500 verify-text">verified</h5>
+            </h1>
+            <p className="flex gap-3 rating-star">
               <span>4.9</span>
               <span className="flex">
                 <CiStar className="star-icon" />
@@ -159,7 +159,7 @@ const Navbar = () => {
               </span>
             </p>
 
-            <p className="flex m-4 justify-betweens">
+            <p className="flex m-4 justify-between">
               <CiLocationOn className="add-time-icon" /> PLOT NUMBER-09 GROUND
               FLOOR CISF CAMPUS ROAD, AHINSA KHAND-02 INDIRAPURAM, Ghaziabad,
               Uttar Pradesh, 201014{" "}
