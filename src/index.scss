@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./styles/app.scss";
+
+.slick-slide > div {
+  margin: 0 10px;
+}

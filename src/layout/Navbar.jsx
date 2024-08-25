@@ -1,119 +1,183 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaUser } from "react-icons/fa";
+import { CiLocationOn } from "react-icons/ci";
+import { IoMdTime } from "react-icons/io";
+import { CiStar } from "react-icons/ci";
+
 import LogOutComponent from "../auth0Component/LogOutComponent";
+import SliderComponent from "../components/SliderComponent";
+import CardSlider from "../components/CardSlider";
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false);
+  const handleHamburgerClick = () => {
+    setIsActive(!isActive);
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container">
-        <a className="navbar-brand" href="#">
+    <>
+      <nav className={`navbar ${isActive ? "active" : ""}`}>
+        <div className="navbar-logo">
           <img
             src="https://cdn.tyreplex.net/themes/moonlight/images/TP-logo.png?tr=w-150,q-60"
             alt="Logo"
-            className="navbar-logo"
           />
-        </a>
+        </div>
 
-        <div className="navbar-nav mx-auto">
-          <div className="nav-item dropdown">
-            <a className="nav-link" href="#">
+        <div className={`navbar-menu ${isActive ? "active" : ""}`}>
+          <div className="nav-item">
+            <a href="#" className="nav-link">
               Car Tyres
             </a>
             <div className="dropdown-menu">
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 SUV Tyres
               </a>
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Sedan Tyres
               </a>
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Hatchback Tyres
+              </a>
+              <a href="#" className="dropdown-item">
+                Sedan Tyres
               </a>
             </div>
           </div>
-          <div className="nav-item dropdown">
-            <a className="nav-link" href="#">
+          <div className="nav-item">
+            <a href="#" className="nav-link">
               Bike Tyres
             </a>
             <div className="dropdown-menu">
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Sports Bike Tyres
               </a>
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Cruiser Tyres
               </a>
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Dirt Bike Tyres
+              </a>
+              <a href="#" className="dropdown-item">
+                Cruiser Tyres
               </a>
             </div>
           </div>
-          <div className="nav-item dropdown">
-            <a className="nav-link" href="#">
+          <div className="nav-item">
+            <a href="#" className="nav-link">
               Tyre Pressure
             </a>
             <div className="dropdown-menu">
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Car Tyre Pressure
               </a>
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
+                Bike Tyre Pressure
+              </a>
+              <a href="#" className="dropdown-item">
                 Bike Tyre Pressure
               </a>
             </div>
           </div>
-          <div className="nav-item dropdown">
-            <a className="nav-link" href="#">
+          <div className="nav-item">
+            <a href="#" className="nav-link">
               Commercial Tyres
             </a>
             <div className="dropdown-menu">
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Truck Tyres
               </a>
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Bus Tyres
               </a>
             </div>
           </div>
-          <div className="nav-item dropdown">
-            <a className="nav-link" href="#">
+          <div className="nav-item">
+            <a href="#" className="nav-link">
               Accessories
             </a>
             <div className="dropdown-menu">
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Seat Covers
               </a>
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Floor Mats
-              </a>
-              <a className="dropdown-item" href="#">
-                Air Fresheners
               </a>
             </div>
           </div>
-          <div className="nav-item dropdown">
-            <a className="nav-link" href="#">
+          <div className="nav-item">
+            <a href="#" className="nav-link">
               More
             </a>
             <div className="dropdown-menu">
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Seat Covers
               </a>
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Floor Mats
               </a>
-              <a className="dropdown-item" href="#">
+              <a href="#" className="dropdown-item">
                 Air Fresheners
               </a>
             </div>
           </div>
+
+          <div className={`login-section ${isActive ? "active" : ""}`}>
+            <FaUser className="user-icon" />
+            <LogOutComponent />
+          </div>
         </div>
 
-        <div className="login-section">
-          <FaUser className="user-icon" />
-          {/* <button >Login</button> */}
-          <LogOutComponent />
+        <div
+          className={`hamburger ${isActive ? "is-active" : ""}`}
+          onClick={handleHamburgerClick}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <div className="card-slider">
+        <div className="flex justify-between">
+          <div className="address-section w-[500px] address-section">
+            <h2 className="m-4 p-7 text-lg flex justify-between">
+              SHREE HEMKUNT TYRES AND SERVICES
+              <h5 className="text-green-500">verified</h5>
+            </h2>
+            <p className="flex gap-3 m-4">
+              <span>4.9</span>
+              <span className="flex">
+                <CiStar className="star-icon" />
+                <CiStar className="star-icon" />
+
+                <CiStar className="star-icon" />
+
+                <CiStar className="star-icon" />
+
+                <CiStar className="star-icon" />
+              </span>
+            </p>
+
+            <p className="flex m-4 justify-betweens">
+              <CiLocationOn className="add-time-icon" /> PLOT NUMBER-09 GROUND
+              FLOOR CISF CAMPUS ROAD, AHINSA KHAND-02 INDIRAPURAM, Ghaziabad,
+              Uttar Pradesh, 201014{" "}
+            </p>
+            <p className="flex m-4">
+              <IoMdTime className="time-icon" />
+              Open - Monday to Sunday - 10:00AM to 8:00PM
+            </p>
+          </div>
+          <div className="card-section">
+            <SliderComponent />
+          </div>
+        </div>
+        <div>
+          <CardSlider />
         </div>
       </div>
-    </nav>
+    </>
   );
 };
 

@@ -6,8 +6,8 @@ const Auth0WithHistory = (props) => {
 
   return (
     <Auth0Provider
-      domain={import.meta.env.REACT_APP_DOMAIN}
-      clientId={import.meta.env.REACT_APP_CLIENT_ID}
+      domain={import.meta.env.VITE_APP_REACT_APP_DOMAIN}
+      clientId={import.meta.env.VITE_APP_REACT_APP_CLIENT_ID}
       authorizationParams={{
         redirect_uri: window.location.origin,
       }}
