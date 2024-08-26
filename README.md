@@ -46,7 +46,8 @@ Also given you sample Navbar and Footer components so that you get comfortable a
 
 => Clone the directory to start work $git clone 
 
- 
+https://github.com/preetuuppp/UIDesignAndDevelopent.git
+
 => Ok guys here are the some basic instruction before you start , If you are here you are successfully pulled the code and you are ready to type you first command in terminal.
 
 Step-1- Navigate to proeject directory using $cd Wellness-Retreats-Assignment
