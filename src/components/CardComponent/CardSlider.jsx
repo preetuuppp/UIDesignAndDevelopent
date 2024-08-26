@@ -33,6 +33,11 @@ const CardSlider = ({ data, secondCard }) => {
     <>
       <div className="second-card">
         <div className="mt-20">
+          {!secondCard && (
+            <div className="px-3 mb-2 text-lg font-semibold">
+              2278 Google Reviews
+            </div>
+          )}
           <Slider {...settings}>
             {!secondCard
               ? data.map((e) => (
