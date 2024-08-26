@@ -6,7 +6,7 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFlip, Pagination, Navigation } from "swiper/modules";
-import { SwiperImages } from "../AllData/Data";
+import { SwiperImages } from "../../AllData/Data";
 
 const SiderComponent = () => {
   return (
