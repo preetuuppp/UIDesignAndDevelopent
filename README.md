@@ -1,7 +1,9 @@
 # UiDesignAndDevelopment
 
+This is an online platform that specializes in providing a wide range of vehicle tires, including car, bike, and commercial vehicle tires. It offers detailed information about various tire brands and models, making it easy for customers to find the perfect match for their vehicles. Additionally, Tyreplex provides services like tire fitting, alignment, and balancing, aiming to be a one-stop solution for all tire-related needs. The platform is known for its extensive catalog, user-friendly interface, and comprehensive guides on tire care and maintenance.
+
 ### Deployed Link
-Visit: ui-design-and-developent.vercel.app
+Visit: https://ui-design-and-developent.vercel.app/
 
 ### Functionalities
 
