@@ -23,9 +23,11 @@ const AdressReview = () => {
                   backgroundColor: "rgb(76,167,44)",
                 }}
               >
-                <span>4.9</span>
+                <span className="text-white p-1 text-center flex justify-center">
+                  4.9
+                </span>
               </div>
-              <div>
+              <div className="mt-1">
                 <span className="gap-4">★ ★ ★ ★ ★ 2278 Reviews</span>
               </div>
               <button className="px-2 py-1 text-gray-500 font-semibold border-1 rounded-sm border-gray-400 ">

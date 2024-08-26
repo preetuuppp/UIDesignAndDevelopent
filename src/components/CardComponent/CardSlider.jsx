@@ -41,22 +41,20 @@ const CardSlider = ({ data, secondCard }) => {
           <Slider {...settings}>
             {!secondCard
               ? data.map((e) => (
-                  <>
-                    <div className="bg-white h-[200px] w-[300px] text-black rounded-xl card-border p-2">
-                      <div className="rounded-t-xl flex justify-start p-2">
-                        <img
-                          src={e.image}
-                          alt=""
-                          className="h-20 w-20 rounded-full"
-                        />
-                        <p className="text-lg m-3">{e.name}</p>
-                      </div>
-
-                      <div className="flex flex-col justify-cente items-center gap-4 py-2">
-                        <p>{e.description}</p>
-                      </div>
+                  <div className="bg-white h-[200px] w-[300px] text-black rounded-xl card-border">
+                    <div className="rounded-t-xl flex justify-start p-2">
+                      <img
+                        src={e.image}
+                        alt=""
+                        className="h-20 w-20 rounded-full"
+                      />
+                      <p className="text-lg m-3">{e.name}</p>
                     </div>
-                  </>
+
+                    <div className="flex flex-col justify-cente items-center gap-4 p-2">
+                      <p>{e.description}</p>
+                    </div>
+                  </div>
                 ))
               : data.map((e) => (
                   <div className="bg-white h-[120px] w-[30px] text-black rounded-xl  card-border">
